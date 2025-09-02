@@ -142,6 +142,7 @@ form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea{
@@ -171,4 +172,70 @@ footer{
 
 .footer__link{
     padding: 0 16px;
+}
+
+/* Media Queries, small phones, tablets, lg smart phones */
+
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.home__description{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.subheader{
+    text-align: center;
+    font-size: 28px;
+}
+
+.home__description--button{
+    max-width: 240px;
+    text-align: center;
+}
+
+ul{
+    display: none;
+}
+
+.section__description{
+    flex-direction: column;
+}
+
+.Section__description--wrapper{
+    width: 100%;
+}
+
+.about__img--wrapper{
+    width: 100%;
+}
+
+#discord .section__description{
+    flex-direction: column-reverse;
+}
+
+footer__logo{
+    max-width: 360px;
+}
+
+footer{
+    padding: 48px 24px;
+}
+
+.footer__link{
+    padding: 0 4px;
+    font-size: 18px;
+}
+
+.footer__links{
+    margin-bottom: 24px;
 }
